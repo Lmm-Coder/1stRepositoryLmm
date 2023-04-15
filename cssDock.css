@@ -1,7 +1,9 @@
-<!DOCKTYPE css>
-<css>
-<body>
+<body> {
+    Background-color:purple;
+}
 
-<h2>This is a css sheet</h2>
-
-</body>
+h1 {
+  color:navy;
+  margin left:35px;
+  font size:80%;
+}
