@@ -1,9 +1,49 @@
-<body> {
-    Background-color:purple;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
 
-h1 {
-  color:navy;
-  margin left:35px;
-  font size:80%;
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 50px;
+  background-color: #00ff00;
+  padding: 40px;
 }
+.grid-container {
+  display: grid;
+  grid-template-rows: 120px 300px;
+}
+.grid-container > div {
+  background-color: #30D5C8;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Grid</h1>
+
+<p>-------CSS grid-------</p>
+
+<div class="grid-container">
+  <div class="item1">Up here is a header</div>
+  <div class="item2">This is a side bar</div>
+  <div class="item3">Main bar</div>  
+  <div class="item4">Right side</div>
+  <div class="item5">This is a footer</div>
+</div>
+
+</body>
+</html>
+
